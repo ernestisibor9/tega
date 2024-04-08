@@ -212,6 +212,7 @@ button {
 /* banner bg main start */
 
 .banner_bg_main {
+    min-height: 100vh;
     width: 100%;
     float: left;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/banner2.jpg);
@@ -955,3 +956,41 @@ input.mail_bt::placeholder {
 
 
 /* copyright section end */
+
+
+/* Ernzo customize css */
+.contact{
+    text-align: right;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+       /* Adjust styling as needed */
+       .navbar {
+        transition: background-color 0.3s ease-in-out;
+      }
+      .navbar.scrolled {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        color: black !important;
+        padding: 10px 0;
+      }
+      .navbar.scrolled .contact{
+        color: black !important;
+      }
+    
+      .toggle-icon2{
+       display: none;
+      }
+      .toggle-icon2.toggle-show{
+       display: block;
+      }
+      .toggle-icon{
+       display: block;
+      }
+      .toggle-icon.toggle-show-first{
+       display: none;
+      }
+      .horizontal{
+        border: 1px solid gray;
+      }
