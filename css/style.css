@@ -212,10 +212,10 @@ button {
 /* banner bg main start */
 
 .banner_bg_main {
-    min-height: 100vh;
+    min-height: 30vh;
     width: 100%;
     float: left;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/banner2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/slides/slide4.png);
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -958,11 +958,37 @@ input.mail_bt::placeholder {
 /* copyright section end */
 
 
+
+
+
 /* Ernzo customize css */
+.sub2 {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-style: normal;
+    font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96,
+      "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514,
+      "YTUC" 712;
+  }
+  .sub-text {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    /* font-size: 1.5rem; */
+    font-style: normal;
+    font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96,
+      "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514,
+      "YTUC" 712;
+  }
+
 .contact{
     text-align: right;
     color: #fff;
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
        /* Adjust styling as needed */
@@ -994,3 +1020,4 @@ input.mail_bt::placeholder {
       .horizontal{
         border: 1px solid gray;
       }
+      
