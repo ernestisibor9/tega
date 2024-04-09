@@ -139,6 +139,7 @@
           text-align: center;
           font-size: 50px;
           margin: -25px;
+          padding-top: 10px;
       }
     .circle-4{
           position: absolute;
@@ -166,6 +167,31 @@
           width: 25px;
           height: 25px;
           margin: auto 96%;
+      }
+      .review-card{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      .review-card .card-body{
+        padding: 20px;
+      }
+      .default-review{
+        display: block;
+      }
+      .latter-review{
+        display: none;
+      }
+      .review-card:hover .default-review {
+        display: none;
+      }
+      .review-card:hover .latter-review {
+        display: block;
+      }
+      .person{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
       }
   </style>
   <body>
@@ -410,7 +436,7 @@
             </h5>
           </div>
         </div>
-        <div class="row mt-5 ">
+        <div class="row mt-5">
           <div class="col-md-11 mb-5">
             <div class="circle">
               <div class="line-1"></div>
@@ -419,131 +445,64 @@
               <div class="circle-6"><p>6</p></div>
             </div>
           </div>
-          <div class="col-md-1 mb-5">
-          </div>
+          <div class="col-md-1 mb-5"></div>
         </div>
         <div class="row mt-5">
           <div class="col-md-3"></div>
           <div class="col-md-3 mt-3">
             <h5 class="sub3">
-              <strong class="fw-medium">Consultation,</strong> creating of
-              design concept (moodboard), design approval, estimate/
-              budgeting/invoicing and initial payment deposit.
+              <strong class="fw-medium">Quality control,</strong> site
+              visitation, workshop visitation, inventory of sourced/imported
+              material, more procurements and final payment.
             </h5>
           </div>
           <div class="col-md-3 mt-3">
             <h5 class="sub3">
-              mobilization, and Project brief with DWT team and artisans.
+              <strong class="fw-medium">Site deliveries, </strong> and soft/full
+              installation work. Error management and corrections.
             </h5>
           </div>
           <div class="col-md-3 mt-3">
             <h5 class="sub3">
-              procurement and sourcing of materials. Production of furniture and
-              other bespoke items. Site renovation work (Electrical,
-              Screeding/Painting, Plumbing) etc (if need be).
+              <strong class="fw-medium">final installation, </strong> Styling
+              and project handover. Extension permit will be requested for if
+              need be. Also, one week window is open for clients checks and
+              corrections.
             </h5>
           </div>
-        
         </div>
       </div>
-      <hr class="horizontal mt-53 mb-3" />
-      <!-- <div class="row">
-        <div class="col-md-1">
-          <h1 style="font-size: 2.2rem">01</h1>
-        </div>
-        <div class="col-md-7">
-          <h1>Project Management/Procurement</h1>
-          <h4 class="sub-text">
-            We provide project management services and personal interior
-            shopping services
-          </h4>
-        </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-1">
-          <h1 style="font-size: 2.2rem">02</h1>
-        </div>
-        <div class="col-md-7">
-          <h1>Property Finishing and Furnishing</h1>
-          <h4 class="sub-text">
-            For both: Commercial and Residential properties.
-          </h4>
-        </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-1">
-          <h1 style="font-size: 2.2rem">03</h1>
-        </div>
-        <div class="col-md-7">
-          <h1>Architectural design and construction</h1>
-          <h4 class="sub-text">
-            Architectural and MEP drawing|Interior and exterior 3D
-            design/construction.
-          </h4>
-        </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-1">
-          <h1 style="font-size: 2.2rem">04</h1>
-        </div>
-        <div class="col-md-7">
-          <h1>Interior and Exterior Designs</h1>
-          <h4 class="sub-text">
-            Interior and Exterior Designs.
-          </h4>
-        </div>
-        <div class="col-md-4"></div>
-      </div> -->
+      <hr class="horizontal mt-5 mb-3" />
     </div>
     <!---banner bg main2 end-->
     <!-- fashion section start -->
-    <div class="fashion_section">
+    <div class="fashion_section mt-4">
       <div id="main_slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
-              <h1 class="fashion_taital">Man & Woman Fashion</h1>
+              <h1 class="fashion_taital">
+                Recent Projects
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
               <div class="fashion_section_2">
                 <div class="row">
-                  <div class="col-lg-4 col-sm-4">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Man T -shirt</h4>
+                      <!-- <h4 class="shirt_text">Man T -shirt</h4>
                       <p class="price_text">
                         Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/tshirt-img.png" />
+                      </p> -->
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide1.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Man -shirt</h4>
-                      <p class="price_text">
-                        Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/dress-shirt-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Woman Scart</h4>
-                      <p class="price_text">
-                        Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/women-clothes-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
@@ -553,51 +512,24 @@
           </div>
           <div class="carousel-item">
             <div class="container">
-              <h1 class="fashion_taital">Man & Woman Fashion</h1>
+              <h1 class="fashion_taital">
+                Recent Projects
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
               <div class="fashion_section_2">
                 <div class="row">
-                  <div class="col-lg-4 col-sm-4">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Man T -shirt</h4>
-                      <p class="price_text">
-                        Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/tshirt-img.png" />
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide2.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Man -shirt</h4>
-                      <p class="price_text">
-                        Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/dress-shirt-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Woman Scart</h4>
-                      <p class="price_text">
-                        Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/women-clothes-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
@@ -607,51 +539,78 @@
           </div>
           <div class="carousel-item">
             <div class="container">
-              <h1 class="fashion_taital">Man & Woman Fashion</h1>
+              <h1 class="fashion_taital">
+                Recent Projects
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
               <div class="fashion_section_2">
                 <div class="row">
-                  <div class="col-lg-4 col-sm-4">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Man T -shirt</h4>
-                      <p class="price_text">
-                        Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/tshirt-img.png" />
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide3.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <h1 class="fashion_taital">
+                Recent Projects
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
+              <div class="fashion_section_2">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Man -shirt</h4>
-                      <p class="price_text">
-                        Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/dress-shirt-img.png" />
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide4.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <h1 class="fashion_taital">
+                Recent Projects
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
+              <div class="fashion_section_2">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Woman Scart</h4>
-                      <p class="price_text">
-                        Price <span style="color: #262626">$ 30</span>
-                      </p>
-                      <div class="tshirt_img">
-                        <img src="images/women-clothes-img.png" />
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide5.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
@@ -679,61 +638,35 @@
       </div>
     </div>
     <!-- fashion section end -->
-    <!-- electronic section start -->
-    <div class="fashion_section">
-      <div
-        id="electronic_main_slider"
-        class="carousel slide"
-        data-ride="carousel"
-      >
+
+    <!-- fashion section start -->
+    <div class="fashion_section mt-4">
+      <div id="main_slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
-              <h1 class="fashion_taital">Electronic</h1>
+              <h1 class="fashion_taital">
+                Styling Accessories
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
               <div class="fashion_section_2">
                 <div class="row">
-                  <div class="col-lg-4 col-sm-4">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Laptop</h4>
+                      <!-- <h4 class="shirt_text">Man T -shirt</h4>
                       <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/laptop-img.png" />
+                        Price <span style="color: #262626">$ 30</span>
+                      </p> -->
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide1.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Mobile</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/mobile-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Computers</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/computer-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
@@ -743,51 +676,24 @@
           </div>
           <div class="carousel-item">
             <div class="container">
-              <h1 class="fashion_taital">Electronic</h1>
+              <h1 class="fashion_taital">
+                Styling Accessories
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
               <div class="fashion_section_2">
                 <div class="row">
-                  <div class="col-lg-4 col-sm-4">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Laptop</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/laptop-img.png" />
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide2.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Mobile</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/mobile-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Computers</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/computer-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
@@ -797,51 +703,78 @@
           </div>
           <div class="carousel-item">
             <div class="container">
-              <h1 class="fashion_taital">Electronic</h1>
+              <h1 class="fashion_taital">
+                Styling Accessories
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
               <div class="fashion_section_2">
                 <div class="row">
-                  <div class="col-lg-4 col-sm-4">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Laptop</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/laptop-img.png" />
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide3.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <h1 class="fashion_taital">
+                Styling Accessories
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
+              <div class="fashion_section_2">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Mobile</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/mobile-img.png" />
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide4.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <h1 class="fashion_taital">
+                Styling Accessories
+                <span><img src="images/arrow.png" alt="" /></span>
+              </h1>
+              <div class="fashion_section_2">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="box_main">
-                      <h4 class="shirt_text">Computers</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="electronic_img">
-                        <img src="images/computer-img.png" />
+                      <div class="">
+                        <a href="portfolio.html">
+                          <img src="./images/slides/slide5.png" />
+                        </a>
                       </div>
                       <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
+                        <div class="buy_bt">
+                          <a href="portfolio.html">View Portfolio</a>
+                        </div>
+                        <!-- <div class="seemore_bt"><a href="#">See More</a></div> -->
                       </div>
                     </div>
                   </div>
@@ -852,7 +785,7 @@
         </div>
         <a
           class="carousel-control-prev"
-          href="#electronic_main_slider"
+          href="#main_slider"
           role="button"
           data-slide="prev"
         >
@@ -860,7 +793,7 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#electronic_main_slider"
+          href="#main_slider"
           role="button"
           data-slide="next"
         >
@@ -868,200 +801,177 @@
         </a>
       </div>
     </div>
-    <!-- electronic section end -->
-    <!-- jewellery  section start -->
-    <div class="jewellery_section">
-      <div
-        id="jewellery_main_slider"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <h1 class="fashion_taital">Jewellery Accessories</h1>
-              <div class="fashion_section_2">
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Jumkas</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/jhumka-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+    <!-- fashion section end -->
+
+    <!---Review start-->
+    <div class="container-fluid mb-5">
+      <div class="container">
+        <h1 class="fashion_taital mb-4">
+          Reviews
+          <span><img src="images/arrow.png" alt="" /></span>
+        </h1>
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <div class="card review-card">
+              <div class="card-body">
+                <div class="default-review text-center pt-4">
+                  <!-- <img src="images/black-logo.png" alt=""> -->
+                  <img src="images/person.jpg" alt="" class="person" />
+                  <div class="pt-4">
+                    <h4 class="fw-semibold">John Doe</h4>
+                    <h6>Production Manager</h6>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Necklaces</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/neklesh-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+                </div>
+                <div class="text-center latter-review">
+                  <h5 class="fw-semibold" style="margin-bottom: -10px;">John Doe</h5>
+                  <small>Production Manager</small>
+                  <div class="mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Kangans</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/kangan-img.png" />
+                  <div>
+                    <h6
+                      class="text-justify p-3 bg-dark text-white"
+                      style="border-radius: 3%" 
+                    >
+                      <div class="mb-2">
+                        <i class="fa-solid fa-quote-left text-white fs-3"></i>
                       </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptates molestias magni ex consectetur distinctio
+                      labore culpa non assumenda quo molestiae illum natus
+                      porro.
+                    </h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <h1 class="fashion_taital">Jewellery Accessories</h1>
-              <div class="fashion_section_2">
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Jumkas</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/jhumka-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+          <div class="col-md-3">
+            <div class="card review-card">
+              <div class="card-body">
+                <div class="default-review text-center pt-4">
+                  <!-- <img src="images/black-logo.png" alt=""> -->
+                  <img src="images/person.jpg" alt="" class="person" />
+                  <div class="pt-4">
+                    <h4 class="fw-semibold">John Doe</h4>
+                    <h6>Production Manager</h6>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Necklaces</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/neklesh-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+                </div>
+                <div class="text-center latter-review">
+                  <h5 class="fw-semibold" style="margin-bottom: -10px;">John Doe</h5>
+                  <small>Production Manager</small>
+                  <div class="mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Kangans</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/kangan-img.png" />
+                  <div>
+                    <h6
+                      class="text-justify p-3 bg-dark text-white"
+                      style="border-radius: 3%"
+                    >
+                      <div class="mb-2">
+                        <i class="fa-solid fa-quote-left text-white fs-3"></i>
                       </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptates molestias magni ex consectetur distinctio
+                      labore culpa non assumenda quo molestiae illum natus
+                      porro.
+                    </h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <h1 class="fashion_taital">Jewellery Accessories</h1>
-              <div class="fashion_section_2">
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Jumkas</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/jhumka-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+          <div class="col-md-3">
+            <div class="card review-card">
+              <div class="card-body">
+                <div class="default-review text-center pt-4">
+                  <!-- <img src="images/black-logo.png" alt=""> -->
+                  <img src="images/person.jpg" alt="" class="person" />
+                  <div class="pt-4">
+                    <h4 class="fw-semibold">John Doe</h4>
+                    <h6>Production Manager</h6>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Necklaces</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/neklesh-img.png" />
-                      </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+                </div>
+                <div class="text-center latter-review">
+                  <h5 class="fw-semibold" style="margin-bottom: -10px;">John Doe</h5>
+                  <small>Production Manager</small>
+                  <div class="mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
                   </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="box_main">
-                      <h4 class="shirt_text">Kangans</h4>
-                      <p class="price_text">
-                        Start Price <span style="color: #262626">$ 100</span>
-                      </p>
-                      <div class="jewellery_img">
-                        <img src="images/kangan-img.png" />
+                  <div>
+                    <h6
+                      class="text-justify p-3 bg-dark text-white"
+                      style="border-radius: 3%"
+                    >
+                      <div class="mb-2">
+                        <i class="fa-solid fa-quote-left text-white fs-3"></i>
                       </div>
-                      <div class="btn_main">
-                        <div class="buy_bt"><a href="#">Buy Now</a></div>
-                        <div class="seemore_bt"><a href="#">See More</a></div>
-                      </div>
-                    </div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptates molestias magni ex consectetur distinctio
+                      labore culpa non assumenda quo molestiae illum natus
+                      porro.
+                    </h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#jewellery_main_slider"
-          role="button"
-          data-slide="prev"
-        >
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#jewellery_main_slider"
-          role="button"
-          data-slide="next"
-        >
-          <i class="fa fa-angle-right"></i>
-        </a>
-        <div class="loader_main">
-          <div class="loader"></div>
+          <div class="col-md-3">
+            <div class="card review-card">
+              <div class="card-body">
+                <div class="default-review text-center pt-4">
+                  <!-- <img src="images/black-logo.png" alt=""> -->
+                  <img src="images/person.jpg" alt="" class="person" />
+                  <div class="pt-4">
+                    <h4 class="fw-semibold">John Doe</h4>
+                    <h6>Production Manager</h6>
+                  </div>
+                </div>
+                <div class="text-center latter-review">
+                  <h5 class="fw-semibold" style="margin-bottom: -10px;">John Doe</h5>
+                  <small>Production Manager</small>
+                  <div class="mb-3">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <div>
+                    <h6
+                      class="text-justify p-3 bg-dark text-white"
+                      style="border-radius: 3%"
+                    >
+                      <div class="mb-2">
+                        <i class="fa-solid fa-quote-left text-white fs-3"></i>
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptates molestias magni ex consectetur distinctio
+                      labore culpa non assumenda quo molestiae illum natus
+                      porro.
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- jewellery  section end -->
+    <!---Review end-->
+
     <!-- footer section start -->
     <div class="footer_section layout_padding">
       <div class="container">
