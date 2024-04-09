@@ -193,6 +193,18 @@
         height: 100px;
         border-radius: 50px;
       }
+      .black-logo{
+        display: none;
+      }
+      .black-logo.add-black{
+        display: block;
+      }
+      .white-logo.remove-white-logo{
+        display: none;
+      }
+      .add-white-logo{
+        display: block;
+      }
   </style>
   <body>
     <!-- banner bg main start -->
@@ -320,7 +332,8 @@
             </span>
           </div>
           <div>
-            <img src="./images/logo/logo.png" alt="" />
+            <img src="./images/logo/logoo.png" alt="" id="white-logo" class="white-logo"/>
+            <img src="./images/logo/black-logo.png" alt="" id="black-logo" class="black-logo" />
           </div>
           <div>
             <a href=""
@@ -1044,15 +1057,23 @@
         var navbar = document.getElementById("navbar");
         var toggleIcon2 = document.getElementById("toggle-icon2");
         var toggleIcon = document.getElementById("toggle-icon");
+        var whiteIcon = document.getElementById("white-logo");
+        var blackIcon = document.getElementById("black-logo");
 
-        if (window.scrollY > 500) {
+        if (window.scrollY > 250) {
           navbar.classList.add("scrolled");
           toggleIcon2.classList.add("toggle-show");
           toggleIcon.classList.add("toggle-show-first");
+          // blackIcon.classList.remove("black-logo");
+          blackIcon.classList.add("add-black");
+          whiteIcon.classList.add("remove-white-logo");
         } else {
           navbar.classList.remove("scrolled");
           toggleIcon2.classList.remove("toggle-show");
           toggleIcon.classList.remove("toggle-show-first");
+          blackIcon.classList.remove("add-black");
+          whiteIcon.classList.remove("remove-white-logo");
+          whiteIcon.classList.add("add-white-logo");
         }
       });
     </script>
