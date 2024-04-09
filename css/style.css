@@ -991,33 +991,32 @@ input.mail_bt::placeholder {
     font-weight: 500;
 }
 
-       /* Adjust styling as needed */
-       .navbar {
-        transition: background-color 0.3s ease-in-out;
-      }
-      .navbar.scrolled {
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        color: black !important;
-        padding: 10px 0;
-      }
-      .navbar.scrolled .contact{
-        color: black !important;
-      }
-    
-      .toggle-icon2{
-       display: none;
-      }
-      .toggle-icon2.toggle-show{
-       display: block;
-      }
-      .toggle-icon{
-       display: block;
-      }
-      .toggle-icon.toggle-show-first{
-       display: none;
-      }
-      .horizontal{
-        border: 1px solid gray;
-      }
-      
+/* Adjust styling as needed */
+.navbar {
+transition: background-color 0.3s ease-in-out;
+}
+.navbar.scrolled {
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+color: black !important;
+padding: 10px 0;
+}
+.navbar.scrolled .contact{
+color: black !important;
+}
+
+.toggle-icon2{
+display: none;
+}
+.toggle-icon2.toggle-show{
+display: block;
+}
+.toggle-icon{
+display: block;
+}
+.toggle-icon.toggle-show-first{
+display: none;
+}
+.horizontal{
+border: 1px solid gray;
+}
