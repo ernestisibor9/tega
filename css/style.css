@@ -200,8 +200,8 @@ button {
 }
 
 .layout_padding {
-    padding-top: 90px;
-    padding-bottom: 0px;
+    padding-top: 35px;
+    padding-bottom: 10px;
 }
 
 .padding_0 {
@@ -313,9 +313,9 @@ button {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 4px 8px 4px 32px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     color: #ffffff;
     display: block;
     transition: 0.3s;
@@ -818,7 +818,7 @@ a:hover {
 .footer_section {
     width: 100%;
     float: left;
-    background-color: #252525;
+    background-color: #436850;
     height: auto;
 }
 
@@ -1030,4 +1030,7 @@ display: none;
 }
 .horizontal{
 border: 1px solid gray;
+}
+.horizontal2{
+    border: 1px solid #fff;
 }
