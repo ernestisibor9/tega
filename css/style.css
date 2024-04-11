@@ -1039,3 +1039,27 @@ border: 1px solid gray;
     width: 160px;
     margin-left: 70px;
 }
+.timeline{
+    display: none;
+}
+.circle-text{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #000;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .timeline {
+        display: block;
+    }
+    .project-timeline {
+        display: none;
+    }
+    .project-num{
+        text-align: center;
+    }
+}
