@@ -233,7 +233,7 @@ button {
     background-color: #2b2a29;
     clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
     height: auto;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 .custom_menu {
@@ -1010,7 +1010,7 @@ transition: background-color 0.3s ease-in-out;
 background-color: #fff;
 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 color: black !important;
-padding: 10px 0;
+padding: 1px 0;
 }
 .navbar.scrolled .contact{
 color: black !important;
@@ -1052,6 +1052,46 @@ border: 1px solid gray;
     font-size: 2.5rem;
     text-align: center;
 }
+
+
+#main_slider2 a.carousel-control-next {
+    right: 615px;
+    top: 105%;
+}
+
+#main_slider2 a.carousel-control-prev {
+    left: 615px;
+    top: 105%;
+}
+
+#main_slider2 .carousel-control-next,
+#main_slider2 .carousel-control-prev {
+    width: 55px;
+    height: 55px;
+    background-color: #30302e;
+    opacity: 1;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#main_slider2 .carousel-control-next:focus,
+#main_slider2 .carousel-control-next:hover,
+#main_slider2 .carousel-control-prev:focus,
+#main_slider2 .carousel-control-prev:hover {
+    color: #fff;
+    background-color: #f26522;
+}
+.schedule-btn{
+    width: 340px;
+    padding: 20px;
+    background-color: #436850;
+    color: #fff;
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
 @media screen and (max-width: 768px) {
     .timeline {
         display: block;
@@ -1061,5 +1101,8 @@ border: 1px solid gray;
     }
     .project-num{
         text-align: center;
+    }
+    .portfolio-img{
+        cursor: pointer;
     }
 }
