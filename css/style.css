@@ -221,6 +221,15 @@ button {
     background-repeat: no-repeat;
 }
 
+.banner_bg_main_team{
+    min-height: 90vh;
+    width: 100%;
+    float: left;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/slides/slide4.png);
+    height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
 /* banner bg main end */
 
@@ -1090,6 +1099,15 @@ border: 1px solid gray;
     margin: 10px 0;
     text-align: center;
 }
+.team-img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.team-text h1{
+    font-size: 3rem;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -1104,5 +1122,31 @@ border: 1px solid gray;
     }
     .portfolio-img{
         cursor: pointer;
+    }
+    .banner_bg_main_team{
+        min-height: 30vh;
+        width: 100%;
+        float: left;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/slides/slide4.png);
+        height: auto;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .banner_bg_main{
+        position: relative;
+    }
+    .black-img{
+        position: absolute;
+        top: 50%; 
+        left: 27%;
+        
+    }
+    .black-logo{
+    border-radius: 500%;
+    border: 4px solid black;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+     background-color: #fff;
     }
 }
