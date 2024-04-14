@@ -231,7 +231,42 @@
 
     .filter .filter-btn.active {
       border-color: red;
-            color: saddlebrown;
+      color: saddlebrown;
+    }
+
+    .accordion {
+        /* max-width: 900px; */
+        margin: 20px auto;
+    }
+    .accordion-item {
+        border-bottom: 1px solid #ccc;
+    }
+    .accordion-item:last-child {
+        /* border-bottom: none; */
+    }
+    .accordion-heading {
+        background-color: white;
+        padding: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    .accordion-heading::after {
+        content: '\25BA';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        transition: transform 0.3s;
+    }
+    .accordion-item.active .accordion-heading::after {
+        transform: translateY(-50%) rotate(90deg);
+    }
+    .accordion-content {
+        display: none;
+        padding: 50px;
+    }
+    .accordion-item.active .accordion-content {
+        display: block;
     }
 
 
@@ -241,7 +276,7 @@
     <div class="banner_bg_main_team mb-5">
       <!-- header top section start -->
       <!-- header top section start -->
-      <h1 class="team1">TEAM</h1>
+      <h1 class="team1">FAQ</h1>
       <!-- header section start -->
       <div class="header_section navbar fixed-top bg-white" id="navbar">
         <div class="container con">
@@ -263,7 +298,7 @@
                 <a href="portfolio.html">PORTFOLIO</a>
                 <a href="team.html">TEAM</a>
                 <a href="electronic.html">WATCH</a>
-                <a href="jewellery.html">STYLING ACCESSORIES</a>
+                <a href="styling-accessories.html">STYLING ACCESSORIES</a>
                 <a href="contact.html">CONTACT</a>
                 <a href="faq.html">FAQ</a>
                 <a href="https://wa.me/2347039230993" target="_blank"
@@ -334,91 +369,45 @@
     <div class="container bg-white mt-5">
       <div class="ml-2">
         <h1 style="font-size: 2.1rem" class="pt-4 pb-3">
-          MEET THE TEAM <span><img src="./images/arrow.png" alt="" /></span>
+          FAQ <span><img src="./images/arrow.png" alt="" /></span>
         </h1>
       </div>
     </div>
     <!---banner bg main2 end-->
 
-    <!---Meet the Team start-->
-    <div class="container mt-5">
-      <div class="row gy-5">
-        <div class="col-md-4 mb-5 mt-5">
-          <img src="images/team/team5.jpg" alt="" class="team-img" />
-        </div>
-        <div class="col-md-8 mb-5 mt-5">
-          <div class="team-text">
-            <h1>Tega anigbogu</h1>
-            <h4 class="fst-italic fs-3">Creative director</h4>
-            <h3 class="fs-3">
-              <span class="mr-2"><i class="fa-regular fa-envelope"></i></span
-              >hello@tega.anigbogu.com
-            </h3>
-            <h5 class="fs-4">
-              I am an accomplished interior designer known for crafting
-              captivating spaces that seamlessly blend with aesthetics and
-              functionality.
-            </h5>
+    <!----FAQ start-->
+    <div class="container mb-5">
+      <div class="row justify-content-center">
+        <div class="accordion">
+          <div class="accordion-item">
+              <div class="accordion-heading">What is Lorem Ipsum?</div>
+              <div class="accordion-content">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
           </div>
-        </div>
-        <div class="col-md-8 mt-5 mb-5">
-          <div class="team-text">
-            <h1>Cross benedict</h1>
-            <h4 class="fst-italic fs-3">
-              Managing director/social media manager
-            </h4>
-            <h3 class="fs-3">
-              <span class="mr-2"><i class="fa-regular fa-envelope"></i></span
-              >cross@elkrosmediahub.com
-            </h3>
-            <h5 class="fs-4">
-              If critical attention to details and communication, with open
-              mindedness to learning and learning was human, it’d be me.
-            </h5>
+          <div class="accordion-item">
+              <div class="accordion-heading">Why do we use it?</div>
+              <div class="accordion-content">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </div>
           </div>
+          <div class="accordion-item">
+            <div class="accordion-heading">What is Lorem Ipsum?</div>
+            <div class="accordion-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
         </div>
-        <div class="col-md-4 mb-5 mt-5">
-          <img src="images/team/team3.jpg" alt="" class="team-img" />
+        <div class="accordion-item">
+            <div class="accordion-heading">Why do we use it?</div>
+            <div class="accordion-content">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
         </div>
-        <div class="col-md-4 mb-5 mt-5">
-          <img src="images/team/team4.jpg" alt="" class="team-img" />
-        </div>
-        <div class="col-md-8 mb-5 mt-5">
-          <div class="team-text">
-            <h1>Nnamdi ibeziako</h1>
-            <h4 class="fst-italic fs-3">Project manager</h4>
-            <h3 class="fs-3">
-              <span class="mr-2"><i class="fa-regular fa-envelope"></i></span
-              >helpdesk@dwt.com
-            </h3>
-            <h5 class="fs-4">
-              am highly organized, detailoriented, a team player who is able to
-              work collaboratively with colleagues and stakeholders to ensure
-              successful project outcomes.
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-8 mt-5 mb-5">
-          <div class="team-text">
-            <h1>Jojo Akpala</h1>
-            <h4 class="fst-italic fs-3">Lead interior designer</h4>
-            <h3 class="fs-3">
-              <span class="mr-2"><i class="fa-regular fa-envelope"></i></span
-              >jojo@dwt.com
-            </h3>
-            <h5 class="fs-4">
-              I have successfully led a team of designers and interns to
-              complete over 20 high-end residential projects in the past year
-              alone.
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 mb-5 mt-5">
-          <img src="images/team/team2.jpg" alt="" class="team-img" />
-        </div>
+          <!-- Add more accordion items as needed -->
+      </div>
       </div>
     </div>
-    <!---Meet the Team end--->
+    <!----FAQ ends --->
 
     <!-- footer section start -->
     <div class="footer_section layout_padding">
@@ -433,7 +422,7 @@
               <li><a href="">Process</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="">Watch</a></li>
-              <li><a href="styling-accessories.html">Styling Accessories</a></li>
+              <li><a href="styling-accessories.html">Shop</a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -445,7 +434,7 @@
                   >Schedule a Consultation</a
                 >
               </li>
-              <li><a href="">FAQ</a></li>
+              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -545,5 +534,23 @@
         }
       });
     </script>
+    <script>
+      // JavaScript to toggle accordion content visibility and rotate arrow icon
+      var accordionItems = document.querySelectorAll('.accordion-item');
+  
+      accordionItems.forEach(function(item) {
+          var heading = item.querySelector('.accordion-heading');
+          var content = item.querySelector('.accordion-content');
+  
+          heading.addEventListener('click', function() {
+              item.classList.toggle('active');
+              if (content.style.display === 'block') {
+                  content.style.display = 'none';
+              } else {
+                  content.style.display = 'block';
+              }
+          });
+      });
+  </script>
   </body>
 </html>
