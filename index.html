@@ -337,7 +337,7 @@
                     src="images/logo/small_logo.png"
                     alt=""
                     class="mb-3" /></span
-              ></a>
+              ></a><h5 class="text-center ml-2 text-white">DESIGNING WITH TEGA</h5>
               <!-- <h6 class="text-white text-center">DESIGNING WITH TEGA</h6> -->
               <div class="ml-5 mt-5">
                 <a href="index.html">HOME</a>
@@ -384,7 +384,7 @@
           </div>
           <span
             class="text-white fw-bold menus d-none d-md-block mt-4"
-            style="margin-left: -360px; font-size: 1.2rem"
+            style="margin-left: -330px; font-size: 1.2rem"
             >MENU</span
           >
           <div>
@@ -394,12 +394,13 @@
               id="white-logo"
               class="white-logo"
             />
+            <span class="text-white text-center tega">DESIGNING WITH TEGA</span>
             <img
               src="./images/logo/black-logo.png"
               alt=""
               id="black-logo"
               class="black-logo"
-            />
+            /> 
           </div>
           <div>
             <a href=""
@@ -1223,6 +1224,7 @@
         var toggleIcon = document.getElementById("toggle-icon");
         var whiteIcon = document.getElementById("white-logo");
         var blackIcon = document.getElementById("black-logo");
+        var tega = document.querySelector('.tega');
 
         if (window.scrollY > 200) {
           navbar.classList.add("scrolled");
@@ -1231,6 +1233,7 @@
           // blackIcon.classList.remove("black-logo");
           blackIcon.classList.add("add-black");
           whiteIcon.classList.add("remove-white-logo");
+          tega.style.display = "none";
         } else {
           navbar.classList.remove("scrolled");
           toggleIcon2.classList.remove("toggle-show");
@@ -1238,6 +1241,7 @@
           blackIcon.classList.remove("add-black");
           whiteIcon.classList.remove("remove-white-logo");
           whiteIcon.classList.add("add-white-logo");
+          tega.style.display = "block";
         }
       });
     </script>

@@ -78,170 +78,189 @@
     />
   </head>
   <style>
-        /* Custom styles for gradient overlay */
-        .carousel-item {
+    /* Custom styles for gradient overlay */
+    .carousel-item {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    }
+
+    /* Optional: Adjust overlay opacity or colors as needed */
+
+    .circle{
           position: relative;
-          overflow: hidden;
-        }
-
-        .overlay {
+          color: black;
+      }
+      .line-1{
           position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-        }
+          background: black;
+          display: flex;
+          width: 95%;
+          height: 4px;
+          margin: 50px 0 0 100px;
+      }
+      .circle-1{
+          position: absolute;
+          background: black;
+          border-radius: 100%;
+          border: 50px solid;
+          width: 25px;
+          height: 25px;
+          margin: auto 5%;
+      }
+      .circle-2{
+          position: absolute;
+          background: black;
+          border-radius: 100%;
+          border: 50px solid;
+          width: 25px;
+          height: 25px;
+          margin: auto 35%;
+      }
+      .circle-3{
+          position: absolute;
+          background: black;
+          border-radius: 80%;
+          border: 50px solid;
+          width: 25px;
+          height: 25px;
+          margin: auto 70%;
+      }
+      .circle p{
+          color: white;
+          text-align: center;
+          font-size: 50px;
+          margin: -25px;
+          padding-top: 10px;
+      }
+    .circle-4{
+          position: absolute;
+          background: black;
+          border-radius: 100%;
+          border: 50px solid;
+          width: 25px;
+          height: 25px;
+          margin: auto 30%;
+      }
+      .circle-5{
+          position: absolute;
+          background: black;
+          border-radius: 100%;
+          border: 50px solid;
+          width: 25px;
+          height: 25px;
+          margin: auto 63%;
+      }
+      .circle-6{
+          position: absolute;
+          background: black;
+          border-radius: 80%;
+          border: 50px solid;
+          width: 25px;
+          height: 25px;
+          margin: auto 96%;
+      }
+      .review-card{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      .review-card .card-body{
+        padding: 20px;
+      }
+      .default-review{
+        display: block;
+      }
+      .latter-review{
+        display: none;
+      }
+      .review-card:hover .default-review {
+        display: none;
+      }
+      .review-card:hover .latter-review {
+        display: block;
+      }
+      .person{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
 
-        /* Optional: Adjust overlay opacity or colors as needed */
-
-        .circle{
-              position: relative;
-              color: black;
-          }
-          .line-1{
-              position: absolute;
-              background: black;
-              display: flex;
-              width: 95%;
-              height: 4px;
-              margin: 50px 0 0 100px;
-          }
-          .circle-1{
-              position: absolute;
-              background: black;
-              border-radius: 100%;
-              border: 50px solid;
-              width: 25px;
-              height: 25px;
-              margin: auto 5%;
-          }
-          .circle-2{
-              position: absolute;
-              background: black;
-              border-radius: 100%;
-              border: 50px solid;
-              width: 25px;
-              height: 25px;
-              margin: auto 35%;
-          }
-          .circle-3{
-              position: absolute;
-              background: black;
-              border-radius: 80%;
-              border: 50px solid;
-              width: 25px;
-              height: 25px;
-              margin: auto 70%;
-          }
-          .circle p{
-              color: white;
-              text-align: center;
-              font-size: 50px;
-              margin: -25px;
-              padding-top: 10px;
-          }
-        .circle-4{
-              position: absolute;
-              background: black;
-              border-radius: 100%;
-              border: 50px solid;
-              width: 25px;
-              height: 25px;
-              margin: auto 30%;
-          }
-          .circle-5{
-              position: absolute;
-              background: black;
-              border-radius: 100%;
-              border: 50px solid;
-              width: 25px;
-              height: 25px;
-              margin: auto 63%;
-          }
-          .circle-6{
-              position: absolute;
-              background: black;
-              border-radius: 80%;
-              border: 50px solid;
-              width: 25px;
-              height: 25px;
-              margin: auto 96%;
-          }
-          .review-card{
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-          }
-          .review-card .card-body{
-            padding: 20px;
-          }
-          .default-review{
-            display: block;
-          }
-          .latter-review{
-            display: none;
-          }
-          .review-card:hover .default-review {
-            display: none;
-          }
-          .review-card:hover .latter-review {
-            display: block;
-          }
-          .person{
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-          }
-
-          .footer-menu a{
-            color: #fff;
-            font-size: 1rem;
-            text-align: left;
-          }
-          .footer-menu a .fa-brands{
-            color: #fff;
-          }
-          .fa-brands{
-            font-size: 1.3rem;
-          }
-          .social-side a .fa-brands{
-            color: #fff;
-            font-size: 0.9rem;
-            text-align: left;
-            margin-right: -30px;
-          }
+      .footer-menu a{
+        color: #fff;
+        font-size: 1rem;
+        text-align: left;
+      }
+      .footer-menu a .fa-brands{
+        color: #fff;
+      }
+      .fa-brands{
+        font-size: 1.3rem;
+      }
+      .social-side a .fa-brands{
+        color: #fff;
+        font-size: 0.9rem;
+        text-align: left;
+        margin-right: -30px;
+      }
 
 
-          .container ul li{
-            cursor: pointer;
-            border-bottom: 2px solid transparent;
-        }
-        .container ul li.active{
-            border-color: #436850;;
-            color: saddlebrown;
-        }
-
-
-    .filter .filter-btn {
-      margin-bottom: 20px;
-      cursor: pointer;
-            border-bottom: 2px solid transparent;
+      .container ul li{
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
     }
-
-    .filter .filter-btn.active {
-      border-color: red;
-            color: saddlebrown;
+    .container ul li.active{
+        border-color: #436850;;
+        color: saddlebrown;
     }
 
 
+         .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.filter .filter-btn {
+  margin-bottom: 20px;
+  cursor: pointer;
+        border-bottom: 2px solid transparent;
+}
+
+.filter .filter-btn.active {
+  border-color: red;
+        color: saddlebrown;
+}
+
+
+/* .filter-btn {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: lightgray;
+}
+
+.filter-btn:hover {
+  background-color: darkgray;
+}
+  */
   </style>
   <body>
     <!-- banner bg main start -->
-    <div class="banner_bg_main_team mb-5">
+    <div class="banner_bg_main mb-5">
       <!-- header top section start -->
       <!-- header top section start -->
-      <h1 class="team1 d-md-block d-none">TEAM</h1>
+      <!-- <h1 class="team3 d-md-block d-none">PORTFOLIO</h1> -->
       <!-- header section start -->
       <div class="header_section navbar fixed-top bg-white" id="navbar">
         <div class="container con">
@@ -256,14 +275,14 @@
                     src="images/logo/small_logo.png"
                     alt=""
                     class="mb-3" /></span
-              ></a> <h5 class="text-center ml-2 text-white">DESIGNING WITH TEGA</h5>
+              ></a><h5 class="text-center ml-2 text-white">DESIGNING WITH TEGA</h5>
               <!-- <h6 class="text-white text-center">DESIGNING WITH TEGA</h6> -->
               <div class="ml-5 mt-5">
                 <a href="index.html">HOME</a>
                 <a href="portfolio.html">PORTFOLIO</a>
                 <a href="team.html">TEAM</a>
                 <a href="electronic.html">WATCH</a>
-                <a href="jewellery.html">STYLING ACCESSORIES</a>
+                <a href="styling-accessories.html">STYLING ACCESSORIES</a>
                 <a href="contact.html">CONTACT</a>
                 <a href="faq.html">FAQ</a>
                 <a href="https://wa.me/2347039230993" target="_blank"
@@ -334,91 +353,35 @@
     <div class="container bg-white mt-5">
       <div class="ml-2">
         <h1 style="font-size: 2.1rem" class="pt-4 pb-3">
-          MEET THE TEAM <span><img src="./images/arrow.png" alt="" /></span>
+          RESIDENTIAL <span><img src="./images/arrow.png" alt="" /></span>
         </h1>
       </div>
     </div>
     <!---banner bg main2 end-->
 
-    <!---Meet the Team start-->
-    <div class="container mt-5">
-      <div class="row gy-5">
-        <div class="col-md-4 mb-5 mt-5">
-          <img src="images/team/team5.jpg" alt="" class="team-img" />
+    <!-- Start Residential section start -->
+    <div class="container">
+        <div class="row gy-5 mb-5">
+            <div class="col-md-4">
+                <img src="images/portfolio_slides/slide1.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="images/portfolio_slides/slide1.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="images/portfolio_slides/slide1.png" alt="">
+            </div>
         </div>
-        <div class="col-md-8 mb-5 mt-5">
-          <div class="team-text">
-            <h1>Tega anigbogu</h1>
-            <h4 class="fst-italic fs-3">Creative director</h4>
-            <h3 class="fs-3">
-              <span class="mr-2"><i class="fa-regular fa-envelope"></i></span
-              >hello@tega.anigbogu.com
-            </h3>
-            <h5 class="fs-4">
-              I am an accomplished interior designer known for crafting
-              captivating spaces that seamlessly blend with aesthetics and
-              functionality.
-            </h5>
-          </div>
+        <div class="row mb-5 gy-5">
+            <div class="col-md-6">
+                <img src="images/portfolio_slides/slide1.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <img src="images/portfolio_slides/slide1.png" alt="">
+            </div>
         </div>
-        <div class="col-md-8 mt-5 mb-5">
-          <div class="team-text">
-            <h1>Cross benedict</h1>
-            <h4 class="fst-italic fs-3">
-              Managing director/social media manager
-            </h4>
-            <h3 class="fs-3">
-              <span class="mr-2"><i class="fa-regular fa-envelope"></i></span
-              >cross@elkrosmediahub.com
-            </h3>
-            <h5 class="fs-4">
-              If critical attention to details and communication, with open
-              mindedness to learning and learning was human, it’d be me.
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 mb-5 mt-5">
-          <img src="images/team/team3.jpg" alt="" class="team-img" />
-        </div>
-        <div class="col-md-4 mb-5 mt-5">
-          <img src="images/team/team4.jpg" alt="" class="team-img" />
-        </div>
-        <div class="col-md-8 mb-5 mt-5">
-          <div class="team-text">
-            <h1>Nnamdi ibeziako</h1>
-            <h4 class="fst-italic fs-3">Project manager</h4>
-            <h3 class="fs-3">
-              <span class="mr-2"><i class="fa-regular fa-envelope"></i></span
-              >helpdesk@dwt.com
-            </h3>
-            <h5 class="fs-4">
-              am highly organized, detailoriented, a team player who is able to
-              work collaboratively with colleagues and stakeholders to ensure
-              successful project outcomes.
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-8 mt-5 mb-5">
-          <div class="team-text">
-            <h1>Jojo Akpala</h1>
-            <h4 class="fst-italic fs-3">Lead interior designer</h4>
-            <h3 class="fs-3">
-              <span class="mr-2"><i class="fa-regular fa-envelope"></i></span
-              >jojo@dwt.com
-            </h3>
-            <h5 class="fs-4">
-              I have successfully led a team of designers and interns to
-              complete over 20 high-end residential projects in the past year
-              alone.
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 mb-5 mt-5">
-          <img src="images/team/team2.jpg" alt="" class="team-img" />
-        </div>
-      </div>
     </div>
-    <!---Meet the Team end--->
+    <!---End Residential Photos-->
 
     <!-- footer section start -->
     <div class="footer_section layout_padding">
@@ -433,19 +396,15 @@
               <li><a href="">Process</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="">Watch</a></li>
-              <li><a href="styling-accessories.html">Styling Accessories</a></li>
+              <li><a href="styling-accessories.html">Style Accessories</a></li>
             </ul>
           </div>
           <div class="col-md-3">
             <ul class="footer-menu">
-              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="">Portfolio</a></li>
               <li><a href="">Contact</a></li>
-              <li>
-                <a href="https://wa.me/07039230993" target="_blank"
-                  >Schedule a Consultation</a
-                >
-              </li>
-              <li><a href="">FAQ</a></li>
+              <li><a href="https://wa.me/07039230993" target="_blank">Schedule a Consultation</a></li>
+              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -504,46 +463,72 @@
       }
     </script>
 
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // select ul
-        const gallery = document.querySelector(".gallery");
-        const filterBtns = document.querySelectorAll(".filter-btn");
-        const items = document.querySelectorAll(".item");
-
-        filterBtns.forEach((btn) => {
-          btn.addEventListener("click", function (e) {
-            //
-            if (e.target.classList.contains("filter-btn")) {
-              gallery.querySelector(".active").classList.remove("active");
-              e.target.classList.add("active");
-            }
-
-            const filter = btn.dataset.filter;
-
-            items.forEach((item) => {
-              item.style.display = "none";
-              if (item.classList.contains(filter)) {
-                item.style.display = "block";
-              }
-            });
-          });
-        });
-      });
-    </script>
-
-        <script>
+    <!-- <script>
       window.addEventListener("scroll", function () {
-        var blackImageCon = document.querySelector('.black-img')
+        var navbar = document.getElementById("navbar");
+        var toggleIcon2 = document.getElementById("toggle-icon2");
+        var toggleIcon = document.getElementById("toggle-icon");
+        var whiteIcon = document.getElementById("white-logo");
+        var blackIcon = document.getElementById("black-logo");
 
-        if (window.scrollY > 250) {
-            blackImageCon.style.display = "none";
-
+        if (window.scrollY > 200) {
+          navbar.classList.add("scrolled");
+          toggleIcon2.classList.add("toggle-show");
+          toggleIcon.classList.add("toggle-show-first");
+          // blackIcon.classList.remove("black-logo");
+          blackIcon.classList.add("add-black");
+          whiteIcon.classList.add("remove-white-logo");
         } else {
-            blackImageCon.style.display = "block";
+          navbar.classList.remove("scrolled");
+          toggleIcon2.classList.remove("toggle-show");
+          toggleIcon.classList.remove("toggle-show-first");
+          blackIcon.classList.remove("add-black");
+          whiteIcon.classList.remove("remove-white-logo");
+          whiteIcon.classList.add("add-white-logo");
         }
       });
-    </script>
+    </script> -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // select ul
+        const gallery = document.querySelector('.gallery');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.item');
+  
+      filterBtns.forEach(btn => {
+       btn.addEventListener('click', function(e) {
+        //
+        if(e.target.classList.contains('filter-btn')){
+                gallery.querySelector('.active').classList.remove('active');
+                e.target.classList.add('active');
+        }
+
+        const filter = btn.dataset.filter;
+        
+        items.forEach(item => {
+          item.style.display = 'none';
+          if (item.classList.contains(filter)) {
+            item.style.display = 'block';
+          }
+        });
+      });
+    });
+  });
+  </script>
+
+<script>
+  window.addEventListener("scroll", function () {
+    var blackImageCon = document.querySelector('.black-img')
+
+    if (window.scrollY > 250) {
+        blackImageCon.style.display = "none";
+
+    } else {
+        blackImageCon.style.display = "block";
+    }
+  });
+</script>
+
   </body>
 </html>
